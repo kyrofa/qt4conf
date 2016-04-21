@@ -12,4 +12,6 @@ build:
 	@echo "$$QT5_CONF" > snappy-qt5.conf
 		
 install: build
-	install -D -m644 snappy-qt5.conf $(DESTDIR)/etc/xdg/qtchooser
+	install -D -m644 snappy-qt5.conf \
+		$(DESTDIR)/etc/xdg/qtchooser/snappy-qt5.conf
+	install -D -m755 qt5-launch $(DESTDIR)/bin/qt5-launch
