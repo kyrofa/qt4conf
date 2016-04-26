@@ -60,10 +60,10 @@ export QTCOMPOSE=$SNAP/usr/share/X11/locale
 
 # Use GTK styling for running under Unity 7
 # TODO: find out what needs to be done for Unity 8
-QT_STYLE_OVERRIDE=GTK+
-DESKTOP_SESSION=ubuntu
-XDG_SESSION_DESKTOP=ubuntu
-XDG_CURRENT_DESKTOP=Unity
+export QT_STYLE_OVERRIDE=GTK+
+export DESKTOP_SESSION=ubuntu
+export XDG_SESSION_DESKTOP=ubuntu
+export XDG_CURRENT_DESKTOP=Unity
 
 cd $SNAP
 exec "$@"
