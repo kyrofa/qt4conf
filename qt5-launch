@@ -68,6 +68,7 @@ export GTK2_MODULES=overlay-scrollbar
 export GTK_MODULES=gail:atk-bridge:unity-gtk-module
 export QT_QPA_PLATFORMTHEME=appmenu-qt5
 export GTK_PATH=$SNAP/usr/lib/$ARCH/gtk-2.0
+export GIO_MODULE_DIR=$SNAP/usr/lib/$ARCH/gio/modules
 
 cd $SNAP
 exec "$@"
