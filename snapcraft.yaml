@@ -1,13 +1,13 @@
-name: qt5conf
+name: qt4conf
 version: 0
 summary: This is meant to be consumed by other projects
 description: |
-  This sets up qt5.conf for projects using qml and other qt5
+  This sets up qt4.conf for projects using qml and other qt4
   components that need an Ubuntu standard internal path
   setup by default like the Ubuntu Core Apps.
 
 parts:
-  qt5conf:
+  qt4conf:
     build-packages: [dpkg-dev]
     plugin: make
     source: .
